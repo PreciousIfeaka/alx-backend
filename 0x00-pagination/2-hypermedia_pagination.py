@@ -53,7 +53,7 @@ class Server:
         return correct_range
 
     def get_hyper(self, page: int = 1, page_size: int = 10) ->\
-            Dict[str, Union[int, List[List]]]:
+            Dict[str, Union[List[List]]]:
         """returns a dictionary with the following key, value pair...
             page_size: the length of the returned dataset page
             page: the current page number
