@@ -71,7 +71,7 @@ class Server:
             next_page = page + 1
         else:
             next_page = None
-    
+ 
         if (page - 1) == 0:
             prev_page = None
         else:
