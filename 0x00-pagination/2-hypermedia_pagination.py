@@ -71,8 +71,11 @@ class Server:
             next_page = page + 1
         else:
             next_page = None
-
-        prev_page = page - 1
+    
+        if (page - 1) == 0:
+            prev_page = None
+        else:
+            prev_page = page - 1
 
         total_pages = len(dataset[1:]) / page_size
 
