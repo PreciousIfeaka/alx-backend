@@ -14,6 +14,8 @@ class LFUCache(BaseCaching):
     key_list = []
 
     def lfu(self, lists):
+        '''counts the number of each key in the list
+        '''
         if lists == []:
             pass
         else:
